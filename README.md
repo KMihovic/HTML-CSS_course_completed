@@ -7,7 +7,8 @@ To view this web please do as follows:
 or from account you can:
 
 - click on "MyFirstWebPage.html" file
-- click on arrow next to a pen and than "Open in GitHub Desktop"
+- click on arrow next to a pen (up/right corner)
+- On popup click "Open in GitHub Desktop"
 - Open tortoiseGit - OK
 - double click (or right click-open) on cloned folder "desktop-tutorial"
 - double click (or right click-open) on document "MyFirstWebPage"

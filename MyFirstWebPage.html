@@ -1,12 +1,7 @@
-<!-- 
-Pitanja
-1. zasto sluzi head element ako se ne prikazuje?
--->
-
 <!DOCTYPE html>																				<!-- Document type za HTML 5 standard -->	
 <html lang="en-US">																			<!-- en oznacava jezik, a US drzavu -->
 
-<head>
+<head>																						<!-- zasto sluzi head element ako se ne prikazuje? -->
 </head>
 
 <body background="slike/3.jpg">
@@ -14,32 +9,35 @@ Pitanja
 <h1 style="color:red; border:4px solid blue; background-color:lightblue;">Prodajem!</h1>
 <hr>																						<!--razdvaja crtom cijelinu -->
 
-<p style="font-family:arial;"><b> Audi A3 </b><br> 2015g, 120.000km </p> 					<!-- <br> stavlja u novi red bez razmaka izmedju-->
+<p style="font-family:arial; border: 4px solid blue; background:lightblue;"><b> Audi A3 </b><br> 2015g, 120.000km </p> 					<!-- <br> stavlja u novi red bez razmaka izmedju-->
+
+<div style="border: 4px solid lightblue;">
 <p> Cijena: 13.500€ </p>
 <img src="slike/2.jpg" width="300" height="200" alt="picture does not exist.">
 <img src="slike/1.jpg" width="300" height="200" alt="picture does not exist.">
 <br>
 <br>
-<a title="link vodi na oglas" href="https://www.njuskalo.hr/auti/audi-a3-1.6-tdi-oglas-37404666"><mark>Link na oglas</mark></a>
+<a title="link vodi na oglas" href="https://www.njuskalo.hr/auti/audi-a3-1.6-tdi-oglas-37404666"; style="font-size:20px;color:blue">LINK NA OGLAS</a>
 <br>
 <q><bdo dir="rtl"> 123456789 </bdo></q>														<!-- okrene karaktere sa desna na lijevo (987654321) -->
+</div>
 <hr>
 
-<h2 style="font-size:120%; border: 4px solid blue; background-color:lightblue;"><b>Osnovne informacije</b></h2>									<!-- font-size moze u px ili u % -->
+<h2 style="font-size:120%; border: 4px solid blue; background-color:lightblue;"><b>Osnovne informacije</b></h2>	<!-- font-size moze u px ili u % -->
 <pre style="font-family:arial; border: 4px solid lightblue;">
 <blockquote>																				<!-- uvuce cijeli tekst (indent) -->
-Lokacija vozila:                 Rijeka
-Marka automobila:                Audi
-Model automobila:                A3
-Tip automobila:                  1,6 <abbr title="Turbocharged Direct Injection">TDI</abbr> <!-- kratice oznacavamo sa <abbr> -->
-Godina proizvodnje:              2015. godište
-Prijeđeni kilometri:             118000 km
-Motor:                           Diesel
-Snaga motora:                    81 kW
-Radni obujam:                    1.598 cm<sup>3</sup>
-Mjenjač:                         Mehanički mjenjač
-Vlasnik:                         drugi
-Ostecenje:                       <del>tuča</del> / prefarbano									<!-- strikethrough mozemo pisat sa <del> i sa <s> -->
+Lokacija vozila:		Rijeka																<!-- DALI SE MOZE OVO AUTOMATSKI NEKAKO POREDAT? -->
+Marka automobila:		Audi
+Model automobila:		A3
+Tip automobila:		1,6 <abbr title="Turbocharged Direct Injection">TDI</abbr> <!-- kratice oznacavamo sa <abbr> -->
+Godina proizvodnje:	2015. godište
+Prijeđeni kilometri:		118000 km
+Motor:				Diesel
+Snaga motora:		81 kW
+Radni obujam:			1.598 cm<sup>3</sup>
+Mjenjač:				Mehanički mjenjač
+Vlasnik:				drugi
+Ostecenje:			<del>tuča</del> / prefarbano									<!-- strikethrough mozemo pisat sa <del> i sa <s> -->
 </blockquote>
 </pre>
 <hr>

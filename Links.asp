@@ -1,1 +1,0 @@
-https://www.topgear.com/sites/default/files/images/cars-road-test/2021/05/fbd5ee7a4e5bf864de9cdae919555264/topgear_-_shelby_gt500-_002.jpg

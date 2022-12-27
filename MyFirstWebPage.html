@@ -2,12 +2,20 @@
 <html lang="en-US">
 
 <head>
+    <link rel="icon" href="images/favicon.ico"/>
 	<style>
 		h1 {color:red; border:4px solid blue; background-color:lightblue;}
 		h2 {font-size:120%; border:4px dashed blue; background-color:lightblue;}
         body {
             background-size: cover;
         }
+        table, th, td {
+            border: 2px solid black;
+            border-radius: 5px;
+            border-spacing: 5px;
+        }
+        tr:hover {background-color: #D6EEEE;} 
+    
 	</style>
 </head>
 
@@ -67,26 +75,64 @@
         </p>
 
     <button onclick="">you have to add some JavaScript code for this</button>
-
     </div>
     <hr>
+
     <h2 id="3" style="margin: 0px;">
         <b>3: Basic informations</b>
     </h2>
     
-    <pre style="font-family:arial; border: 4px solid lightblue; padding-top: 20px;">
-        Location:		Rijeka
-        Car mark:	Audi
-        Car model:	A3
-        Engine:		1,6 <abbr title="Turbocharged Direct Injection">TDI</abbr> 
-        Year:		2015. 
-        Milage:		118000 km
-        Engine type:	Diesel
-        Power:		81 kW
-        Engine size:	1.598 cm<sup>3</sup>
-        Gearbox:		manual
-        Owner:		2
-        Demage:		<del>hail damage</del> / painted
+    <pre style="font-family:arial; border: 4px solid lightblue;">
+        <ul><table style="width: 20%;">
+            <caption><b>Hoverable Table - Move the mouse over the table to see the effect</b></caption>
+                <tr>
+                    <th colspan="2"; style="color: lightblue; background-color: blue; height: 30px;"> Informations: </th>
+                </tr>
+                <tr>
+                    <td>Location:</td>
+                    <td style="text-align: center;">Rijeka</td>
+                </tr>            
+                <tr>
+                    <td>Car mark:</td>
+                    <td style="text-align: center;">Audi</td>
+                </tr>
+                <tr>
+                    <td>Engine::</td>
+                    <td style="text-align: center;">1,6 <abbr title="Turbocharged Direct Injection">TDI</abbr> </td>
+                </tr>
+                <tr>
+                    <td>Year:</td>
+                    <td style="text-align: center;">2015</td>
+                </tr>
+                <tr>
+                    <td>Milage:</td>
+                    <td style="text-align: center;">118000 km</td>
+                </tr>
+                <tr>
+                    <td>Engine type:</td>
+                    <td style="text-align: center;">Diesel</td>
+                </tr>
+                <tr>
+                    <td>Power:</td>
+                    <td style="text-align: center;">81 kW</td>
+                </tr>
+                <tr>
+                    <td>Engine size:</td>
+                    <td style="text-align: center;">1.598 cm<sup>3</sup></td>
+                </tr>
+                <tr>
+                    <td>Gearbox:</td>
+                    <td style="text-align: center;">manual</td>
+                </tr>
+                <tr>
+                    <td>No.of owners:</td>
+                    <td style="text-align: center;">2</td>
+                </tr>
+                <tr>
+                    <td>Demage:</td>
+                    <td style="text-align: center;"><del>hail damage</del> / painted</td>
+                </tr>
+        </ul></table>
     </pre>
     <hr>
 

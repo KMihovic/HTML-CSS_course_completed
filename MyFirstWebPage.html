@@ -9,18 +9,44 @@
         body {
             background-size: cover;
         }
+
         table, th, td {
             border: 2px solid black;
             border-radius: 5px;
             border-spacing: 5px;
         }
-        tr:hover {background-color: #D6EEEE;} 
-    
+        tr:hover {
+            background-color: #D6EEEE;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 15px;
+            overflow: hidden;
+            background-color: #333333;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            color: white;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #111111;
+        }
 	</style>
 </head>
 
 <body background="images/3.jpg">
-
+    <ul>
+        <li><a href="https://www.njuskalo.hr/" target="_blank">Njuskalo</a></li>
+        <li><a href="https://www.index.hr/oglasi" target="_blank">Index</a></li>
+        <li><a href="https://www.oglasnik.hr" target="_blank">Plavi Oglasnik</a></li>
+    </ul>
+    <br>
     <nav> Stranice oglasa:
         <a title="Njuskalo" href="https://www.njuskalo.hr/" target="_blank"> NJUSKALO </a> |
         <a title="Index" href="https://www.index.hr/oglasi/" target="_blank"> INDEX </a> |
@@ -83,8 +109,7 @@
     </h2>
     
     <pre style="font-family:arial; border: 4px solid lightblue;">
-        <ul><table style="width: 20%;">
-            <caption><b>Hoverable Table - Move the mouse over the table to see the effect</b></caption>
+        <ul style="background-color: transparent;"><table style="width: 20%;">
                 <tr>
                     <th colspan="2"; style="color: lightblue; background-color: blue; height: 30px;"> Informations: </th>
                 </tr>
@@ -149,9 +174,20 @@
     </pre>
     <hr>
 
+    <dl>
+        <dt> Main things</dt>
+            <dd>- Without investment.</dd>
+            <dd>- 2 sets of tyre goes with the car winter/summer.</dd>
+        <dt> Other...</dt>    
+            <dd>- Full of equipment - parking sensors front back, hill holder, MMI navigation, start stop, autopilot etc,..</dd>
+            <dd>- Fixed price.</dd>
+    </dl>
+    <hr>
+
     <h2 id="5" style="background-color:yellow; color:red;">
         <b>5: GIFT FOR 1st BUYER!!!</b>
     </h2>
+
     <pre style="background-color: yellow; font-family: arial; border: 4px solid lightblue; padding-top: 20px;">
         <b style="color: red;">SHORT OFFER!!!</b>
         - For the first buyer we will give second car absoultely FREE!!!
@@ -164,14 +200,16 @@
     </h2>
     
     <address style="border: 4px solid lightblue;">
-        <blockquote>
-            Kristijan Mihovic<br>
-            51 000 RIJEKA, CROATIA<br>
-            Mob: 091/123 4567<br>
-            <a href="mailto: kmihovic.ri@gmail.com">
-                Support: Click here to send mail to administrator
-            </a>
-        </blockquote>
+        <dl>
+            <dd>
+                Kristijan Mihovic<br>
+                51 000 RIJEKA, CROATIA<br>
+                Mob: 091/123 4567<br>
+                <a href="mailto: kmihovic.ri@gmail.com">
+                    Support: Click here to send mail to administrator
+                </a>
+            </dd>
+        </dl>
     </address>
 
 </body>

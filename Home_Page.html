@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Home Page</title>
+    <link rel="icon" href="images/favicon.ico"/>
+	<style>
+        * {
+        box-sizing: border-box;
+        }
+
+        body {
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+        float: left;
+        width: 30%;
+        height: 590px;
+        background: #ccc;
+        padding: 20px;
+        }
+
+        article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 380px;
+        }
+
+        article2 {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 210px;
+        }
+
+        footer {
+        background-color: #777;
+        padding: 20px;
+        padding-top: 600px;
+        text-align: center;
+        color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+        nav, article, article2 {
+            width: 100%;
+            height: auto;
+        }
+        }
+
+        body {
+            background-size: cover;
+        }
+        ul {
+            list-style-type: none;
+            padding: 15px;
+            overflow: hidden;
+            background-color: #333333;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            color: white;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #111111;
+        }
+	</style>
+</head>
+
+<body background="images/3.jpg">
+    <ul>
+        <li><a href="Home_Page.html">HOME</a></li>       
+        <li><a href="pages/MyFirstWebPage.html">CROglasi</a></li>
+    </ul>
+    <br>
+
+    <header>
+        <h2>HOME</h2>
+      </header>
+      
+      <section>
+        <nav>
+            <dl>
+                <dt> Main Page</dt><br>
+                    <dd><a href="pages/MyFirstWebPage.html">CROglasi</a></dd><br><br>
+                <dt> Other Web Pages</dt> <br>   
+                    <dd><a title="Njuskalo" href="https://www.njuskalo.hr/"> Njuskalo </a></dd>
+                    <dd><a title="Index" href="https://www.index.hr/oglasi/"> Index </a></dd>
+                    <dd><a title="Plavi oglasnik" href="https://www.oglasnik.hr/"> Plavi Oglasnik </a></dd>
+            </dl>
+        </nav>
+        
+        <article>
+          <h1>About</h1><br>
+          <p>This page is developed with one goal and that is to learn <b>HTML & CSS/SCSS</b> with introduction to <b>Bootstrap</b> framework</p>
+          <p>Next step would be programming language <b>JavaScript/TypeScript</b> and at the end introduction to framework <b>Angular</b></p>
+        </article>
+
+        <article2>
+            <hr>
+            <h1>P.S.</h1>
+            <p>On upper bar you can find web page <b>CROglasi</b> where testing where done while learning HTML/CSS</p>
+            <p>You can also call the page by clicking "CROglasi" on the left side of the page.</p>
+        </article2>
+      </section>
+      
+      <footer>
+        <address>
+          <dl>
+              <dd>
+                  Kristijan Mihovic<br>
+                  51 000 RIJEKA, CROATIA<br>
+                  Mob: 091/123 4567<br>
+                  <a href="mailto: kmihovic.ri@gmail.com">
+                      Support: Click here to send mail to administrator
+                  </a>
+              </dd>
+          </dl>
+      </address>
+      </footer>
+
+</body>
+</html>

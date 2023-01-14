@@ -69,6 +69,57 @@
         </a>
     </p>
 
+    <div>
+        <form action="../home_Page.html">
+            <fieldset>
+            <legend>Please enter username and password to go back to Home page</legend>
+            <!--
+                - We define input field with "id" atribute and than we bind label with "for" atribute.
+                - Input field must have "name" atribute if we want to send value with the "submit" button.
+            -->
+            <label for="username">Username</label><br />
+            <input id="username" name="user" value="Kristijan"><br /><br />
+            <label for="password">Password</label><br />
+            <input id="password" name="pass" value="123"><br /><br />
+            <input type="submit" value="Go to HOME page" style="border: 6px solid rgb(39, 39, 39);"><br />
+            </fieldset>
+        </form>
+
+        <br />
+
+        <form action="../home_Page.html">
+            <fieldset>
+            <legend>test...</legend>
+            <label for="cars">Choose a car:</label>
+
+            <select id="cars" name="cars">
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Fiat">Fiat</option>
+            </select>
+            <input type="submit" value="Click to send selected car on HOME page">
+
+            <p>Popup "Hello world"</p>
+            <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+            </fieldset>
+        </form>
+
+        <br />
+
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            <fieldset>
+            <legend>The <b>output element</b> represents the result of a calculation.</legend>
+            0
+            <input type="range" id="a" name="a" value="50">
+            100 +
+            <input type="number" id="b" name="b" value="50">
+            =
+            <output name="x" for="a b"></output>
+            </fieldset>
+        </form>
+    </div>
+
     <h1>
         1: Selling
     </h1>

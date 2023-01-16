@@ -92,7 +92,7 @@
             <legend>test...</legend>
             <label for="cars">Choose a car:</label>
 
-            <select id="cars" name="cars">
+            <select id="cars" name="cars" size="1">
                 <option value="BMW">BMW</option>
                 <option value="Audi">Audi</option>
                 <option value="Mercedes">Mercedes</option>
@@ -101,8 +101,11 @@
             <input type="submit" value="Click to send selected car on HOME page">
 
             <p>Popup "Hello world"</p>
-            <button type="button" onclick="alert('Hello World!')">Click Me!</button>
-            </fieldset>
+            <button type="button" onclick="alert('Hello World!')">Click Me!</button><br />
+            
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor" value="red">
+        </fieldset>
         </form>
         <!--commit error...delete this after-->
         <br />

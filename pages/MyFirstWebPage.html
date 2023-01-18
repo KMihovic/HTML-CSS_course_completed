@@ -49,7 +49,6 @@
         <li><a href="https://www.njuskalo.hr/" target="_blank">Njuskalo</a></li>
         <li><a href="https://www.index.hr/oglasi" target="_blank">Index</a></li>
         <li><a href="https://www.oglasnik.hr" target="_blank">Plavi Oglasnik</a></li>
-
     </ul>
     <br>
     <nav> Stranice oglasa:
@@ -72,16 +71,16 @@
     <div>
         <form action="../home_Page.html">
             <fieldset>
-            <legend>Please enter username and password to go back to Home page</legend>
-            <!--
-                - We define input field with "id" atribute and than we bind label with "for" atribute.
-                - Input field must have "name" atribute if we want to send value with the "submit" button.
-            -->
-            <label for="username">Username</label><br />
-            <input id="username" name="user" value="Kristijan"><br /><br />
-            <label for="password">Password</label><br />
-            <input id="password" name="pass" value="123"><br /><br />
-            <input type="submit" value="Go to HOME page" style="border: 6px solid rgb(39, 39, 39);"><br />
+                <legend>Please enter username and password to go back to Home page</legend>
+                <!--
+                    - We define input field with "id" atribute and than we bind label with "for" atribute.
+                    - Input field must have "name" atribute if we want to send value with the "submit" button.
+                -->
+                <label for="username">Username</label><br />
+                <input id="username" name="user" value="Kristijan"><br /><br />
+                <label for="password">Password</label><br />
+                <input id="password" name="pass" value="123"><br /><br />
+                <input type="submit" value="Go to HOME page" style="border: 6px solid rgb(39, 39, 39);"><br />
             </fieldset>
         </form>
 
@@ -89,36 +88,35 @@
 
         <form action="../home_Page.html">
             <fieldset>
-            <legend>test...</legend>
-            <label for="cars">Choose a car:</label>
+                <legend>test...</legend>
+                <label for="cars">Choose a car:</label>
 
-            <select id="cars" name="cars" size="1">
-                <option value="BMW">BMW</option>
-                <option value="Audi">Audi</option>
-                <option value="Mercedes">Mercedes</option>
-                <option value="Fiat">Fiat</option>
-            </select>
-            <input type="submit" value="Click to send selected car on HOME page">
+                <select id="cars" name="cars" size="1">
+                    <option value="BMW">BMW</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="Fiat">Fiat</option>
+                </select>
 
-            <p>Popup "Hello world"</p>
-            <button type="button" onclick="alert('Hello World!')">Click Me!</button><br />
-            
-            <label for="favcolor">Select your favorite color:</label>
-            <input type="color" id="favcolor" name="favcolor" value="red">
-        </fieldset>
+                <p>Popup "Hello world"</p>
+                <button type="button" onclick="alert('Hello World!')">Click Me!</button><br />
+                
+                <label for="favcolor">Select your favorite color:</label>
+                <input type="color" id="favcolor" name="favcolor" value="red">
+            </fieldset>
         </form>
-        <!--commit error...delete this after-->
+
         <br />
 
         <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
             <fieldset>
-            <legend>The <b>output element</b> represents the result of a calculation.</legend>
-            0
-            <input type="range" id="a" name="a" value="50">
-            100 +
-            <input type="number" id="b" name="b" value="50">
-            =
-            <output name="x" for="a b"></output>
+                <legend>The <b>output element</b> represents the result of a calculation.</legend>
+                0
+                <input type="range" id="a" name="a" value="50">
+                100 +
+                <input type="number" id="b" name="b" value="50">
+                =
+                <output name="x" for="a b"></output>
             </fieldset>
         </form>
     </div>
@@ -163,15 +161,13 @@
                 <img src="../images/2.jpg" width="75" height="50" alt="link to a car page.">
             </a>
         </p>
-
-        <button onclick="">you have to add some JavaScript code for this</button>
     </div>
     <hr>
 
     <h2 id="3" style="margin: 0px;">
         <b>3: Basic informations</b>
     </h2>
-    
+
     <pre style="font-family:arial; border: 4px solid lightblue;">
         <ul style="background-color: transparent;"><table style="width: 20%;">
                 <tr>
@@ -263,7 +259,7 @@
         <b> 6: Contact: </b>
     </h2>
     
-    <address style="border: 4px solid lightblue;">
+    <address style="border: 4px solid lightblue; text-align: center;">
         <dl>
             <dd>
                 Kristijan Mihovic<br>

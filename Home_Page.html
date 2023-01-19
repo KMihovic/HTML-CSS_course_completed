@@ -39,14 +39,6 @@
         height: 420px;
         }
 
-        article2 {
-        float: left;
-        padding: 20px;
-        width: 80%;
-        background-color: #f1f1f1;
-        height: 210px;
-        }
-
         footer {
         background-color: #777;
         padding: 10px;
@@ -57,48 +49,46 @@
 
         /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
         @media (max-width: 600px) {
-        nav, article, article2 {
+        nav, article {
             width: 100%;
             height: auto;
         }
-        }
 
+        }
         body {
             background-size: cover;
         }
-        ul {
-            list-style-type: none;
-            padding: 15px;
-            overflow: hidden;
-            background-color: #333333;
-        }
+
         li {
-            float: left;
+            margin-bottom: 5px;
         }
+
         li a {
             color: white;
             text-align: center;
             padding: 15px;
             text-decoration: none;
         }
+
         li a:hover {
             background-color: #111111;
         }
+        
 	</style>
 </head>
 
 <body background="images/3.jpg">
-    <ul>
-        <li><a href="home_Page.html">HOME</a></li>       
-        <li><a href="pages/myFirstWebPage.html">CROglasi</a></li>
+    <ul style="list-style-type: none; padding: 15px; overflow: hidden; background-color: #333333;">
+        <li style="float: left;"><a href="home_Page.html">HOME</a></li>       
+        <li style="float: left;"><a href="pages/myFirstWebPage.html">CROglasi</a></li>
     </ul>
     <br>
 
     <header>
-        <h2>HOME</h2>
-      </header>
-      
-      <section>
+        <h1>HOME</h1>
+    </header>
+
+    <section>
         <nav>
             <dl>
                 <dt> Main Page</dt><br>
@@ -113,40 +103,39 @@
         </nav>
         
         <article>
-          <h1>About</h1>
-          <p>This page is developed with one goal and that is to learn <b>HTML & CSS</b> (in VS Code) with introduction to <b>Bootstrap</b> framework</p>
-          <p>Next step would be programming language <b>JavaScript/TypeScript</b> and at the end introduction to framework <b>Angular</b> and/or <b>React</b></p><br>
-          <p>Knowledge until now:</p>
-          <p>- <b>Python (InleliJ)</b>: <u>detail course completed</u></p>
-          <p>- <i><b>SQLite, GitHub</b>: short introduction</p></i>
-          <p>- <i><b>Flask and Django</b>: short introduction</p></i>
-          <p>- <i><b>C# (Visual Studio)</b>: short introduction</p></i>
-          <p>- <b>HTML (VS Code)</b>: <u>detail course completed</u></p>
-          <p>- <b>CSS</b>: <u>detail course in progress...</u></p>
+            <h2>About</h2>
+            <p>This page is developed with one goal and that is to learn <b>HTML & CSS</b> (in VS Code) with introduction to <b>Bootstrap</b> framework</p>
+            <p>Next step would be programming language <b>JavaScript/TypeScript</b> and at the end introduction to framework <b>Angular</b> and/or <b>React</b></p><br>
+            <p>Knowledge until now:</p>
+            <ul>
+                <li><b>Python (InleliJ)</b>: <u>detail course completed</u></li>
+                <li><i><b>SQLite, GitHub</b>: short introduction</i></li>
+                <li><i><b>Flask and Django</b>: short introduction</i></li>
+                <li><i><b>C# (Visual Studio)</b>: short introduction</i></li>
+                <li><b>HTML (VS Code)</b>: <u>detail course completed</u></li>
+                <li><b>CSS</b>: <u>detail course in progress...</u></li>
+            </ul>
+
         </article>
 
-        <article2 style="font-size: 0.9vw;">
+        <article style="font-size: 0.9vw; height: 210px;">
             <hr>
-            <h1>P.S.</h1>
+            <h2>P.S.</h2>
             <p>On upper bar you can find web page <b>CROglasi</b> where testing is done while learning HTML/CSS</p>
             <p>You can also call the page by clicking "CROglasi" on the left side of the page.</p>
-        </article2>
-      </section>
+        </article>
+    </section>
       
-      <footer>
+    <footer>
         <address>
-          <dl>
-              <dd>
-                  Kristijan Mihovic<br>
-                  51 000 RIJEKA, CROATIA<br>
-                  Mob: 091/123 4567<br>
-                  <a href="mailto: kmihovic.ri@gmail.com">
-                      Support: Click here to send mail to administrator
-                  </a>
-              </dd>
-          </dl>
-      </address>
-      </footer>
+            Kristijan Mihovic<br>
+            51 000 RIJEKA, CROATIA<br>
+            Mob: 091/123 4567<br>
+            <a href="mailto: kmihovic.ri@gmail.com">
+                Support: Click here to send mail to administrator
+            </a>
+        </address>
+    </footer>
 
 </body>
 </html>

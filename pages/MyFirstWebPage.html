@@ -4,8 +4,13 @@
 <head>
     <title>CROglasi</title>
     <link rel="icon" href="../images/favicon.ico"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
 	<style>
+        body {
+            background: url(../images/3.jpg);
+            background-attachment: fixed;
+        }
+
 		h1 {color:red; border:4px solid blue; background-color:lightblue;}
 		h2 {font-size:120%; border:4px dashed blue; background-color:lightblue;}
         body {
@@ -19,7 +24,7 @@
             border-spacing: 5px;
         }
         tr:hover {
-            background-color: #D6EEEE;
+            background-color: skyblue;
         } 
 
         ul {
@@ -43,7 +48,7 @@
 	</style>
 </head>
 
-<body background="../images/3.jpg">
+<body>
     <ul>
         <li><a href="../home_Page.html">HOME</a></li>       
         <li><a href="https://www.njuskalo.hr/" target="_blank">Njuskalo</a></li>
@@ -57,12 +62,12 @@
         <a title="Plavi oglasnik" href="https://www.oglasnik.hr/" target="_blank"> PLAVI OGLASNIK </a>
     </nav>
 
-    <iframe src="https://www.njuskalo.hr/" style="height:300px;width:500px;" title="Njuskalo"></iframe>
+    <!--<iframe src="https://www.njuskalo.hr/" style="height:300px;width:500px;" title="Njuskalo"></iframe>
     <iframe src="https://www.index.hr/oglasi/" style="height:300px;width:500px;" title="index"></iframe>
     <iframe src="https://www.oglasnik.hr/" name="iframe_a" style="height:300px;width:500px;border:4px solid red;" title="plavi"></iframe>
-    <p><a style="float:inline-end" href="https://www.auti.hr/" target="iframe_a">Click here for link on PLAVI</a></p>
+    <p><a style="float:inline-end; border-left:6px solid blue;" href="https://www.auti.hr/" target="iframe_a">Click here for link on PLAVI</a></p>-->
 
-    <p style="background:yellow">
+    <p style="background:yellow; border-left: 6px solid red;">
         <a href="#5">
             <b>Jump to section 5: SPECIAL OFFER!!!</b>
         </a>
@@ -79,7 +84,7 @@
                 <label for="username">Username</label><br />
                 <input id="username" name="user" value="Kristijan"><br /><br />
                 <label for="password">Password</label><br />
-                <input id="password" name="pass" value="123"><br /><br />
+                <input type="password" id="password" name="pass" value="123"><br /><br />
                 <input type="submit" value="Go to HOME page" style="border: 6px solid rgb(39, 39, 39);"><br />
             </fieldset>
         </form>
@@ -108,7 +113,7 @@
 
         <br />
 
-        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <form id="5" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
             <fieldset>
                 <legend>The <b>output element</b> represents the result of a calculation.</legend>
                 0
@@ -121,18 +126,18 @@
         </form>
     </div>
 
-    <h1>
+    <h1 style="width: 800px; box-sizing: border-box;">
         1: Selling
     </h1>
-    <hr>
+    <hr style="width : 800px; margin-left: 0px;">
 
-    <p style="font-family:arial; border: 4px dashed blue; background: lightblue;">
+    <p style="font-family:arial; border: 4px dashed blue; background: lightblue; width: 800px; box-sizing: border-box;">
         <b> 2: Audi A3 </b>
         <br>
         2015y, 120.000km
     </p>
 
-    <div style="border: 4px solid lightblue;">
+    <div style="border: 4px solid lightblue; width: 800px; box-sizing: border-box;">
         <p>
             Price: 13.500€
         </p>
@@ -169,9 +174,9 @@
     </h2>
 
     <pre style="font-family:arial; border: 4px solid lightblue;">
-        <ul style="background-color: transparent;"><table style="width: 20%;">
+        <table style="width: 20%;" margin>
                 <tr>
-                    <th colspan="2"; style="color: lightblue; background-color: blue; height: 30px;"> Informations: </th>
+                    <th colspan="2"; style="color: rgb(0, 0, 0); background-color: rgb(0, 183, 255); height: 30px;"> Informations: </th>
                 </tr>
                 <tr>
                     <td>Location:</td>
@@ -217,7 +222,7 @@
                     <td>Demage:</td>
                     <td style="text-align: center;"><del>hail damage</del> / painted</td>
                 </tr>
-        </ul></table>
+        </table>
     </pre>
     <hr>
 
@@ -260,16 +265,12 @@
     </h2>
     
     <address style="border: 4px solid lightblue; text-align: center;">
-        <dl>
-            <dd>
                 Kristijan Mihovic<br>
                 51 000 RIJEKA, CROATIA<br>
                 Mob: 091/123 4567<br>
                 <a href="mailto: kmihovic.ri@gmail.com">
                     Support: Click here to send mail to administrator
                 </a>
-            </dd>
-        </dl>
     </address>
 
 </body>

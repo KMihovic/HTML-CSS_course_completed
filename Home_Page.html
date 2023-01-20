@@ -7,44 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
         * {
-        box-sizing: border-box;
+            box-sizing: border-box;
         }
 
         body {
-        font-family: Arial, Helvetica, sans-serif;
+            background: url(images/3.jpg);
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 98%; 
+            padding-left: 10px;
         }
 
         header {
-        background-color: #777;
-        padding: 5px;
-        text-align: center;
-        font-size: 20px;
-        color: white;
-        }
-
-        /* Create two columns/boxes that floats next to each other */
-        nav {
-        float: left;
-        width: 20%;
-        height: 630px;
-        background: #ccc;
-        padding: 20px;
+            background-color: #777;
+            padding: 1px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
         }
 
         article {
-        float: left;
-        padding: 20px;
-        width: 80%;
-        background-color: #f1f1f1;
-        height: 420px;
+            float: left;
+            padding: 20px;
+            width: 80%;
+            background-color: #f1f1f1;
+            height: 470px;
         }
 
         footer {
-        background-color: #777;
-        padding: 10px;
-        padding-top: 650px;
-        text-align: center;
-        color: white;
+            background-color: #777;
+            padding: 20px;
+            padding-top: 650px;
+            text-align: center;
+            color: white;
         }
 
         /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
@@ -53,61 +48,65 @@
             width: 100%;
             height: auto;
         }
-
-        }
-        body {
-            background-size: cover;
         }
 
-        li {
-            margin-bottom: 5px;
-        }
-
-        li a {
+        nav a {
             color: white;
-            text-align: center;
-            padding: 15px;
             text-decoration: none;
         }
 
-        li a:hover {
-            background-color: #111111;
+        li {
+            margin-bottom: 5px; /* or you can use "line-height: 30px;"*/
         }
-        
+
 	</style>
 </head>
 
-<body background="images/3.jpg">
-    <ul style="list-style-type: none; padding: 15px; overflow: hidden; background-color: #333333;">
-        <li style="float: left;"><a href="home_Page.html">HOME</a></li>       
-        <li style="float: left;"><a href="pages/myFirstWebPage.html">CROglasi</a></li>
-    </ul>
-    <br>
+<body>
+    <nav style="background-color: #333333; padding: 15px;">
+        <a title="Home" href="Home_Page.html">HOME |</a>
+        <a title="CROglasi" href="pages/myFirstWebPage.html">CROglasi</a>
+    </nav>
+    <br />
 
     <header>
-        <h1>HOME</h1>
+        <h1 style="text-shadow: 2px 2px 4px #000000;">HOME</h1>
     </header>
 
     <section>
-        <nav>
+        <nav style="float: left; width: 20%; height: 630px; background: #ccc; padding: 20px;">
             <dl>
-                <dt> Main Page</dt><br>
-                    <dd><a href="pages/myFirstWebPage.html">CROglasi</a></dd><br><br>
-                <dt> Other Web Pages</dt> <br>   
+                <dt> Main Page</dt>
+                    <br />
+                    <dd><a href="pages/myFirstWebPage.html">CROglasi</a></dd>
+                    <br />
+                    <br />
+                <dt> Other Web Pages</dt>
+                    <br>   
                     <dd><a title="Njuskalo" href="https://www.njuskalo.hr/"> Njuskalo </a></dd>
                     <dd><a title="Index" href="https://www.index.hr/oglasi/"> Index </a></dd>
-                    <dd><a title="Plavi oglasnik" href="https://www.oglasnik.hr/"> Plavi Oglasnik </a></dd><br /><br />
-                <dt> Selected Car</dt><br>
-                    <dd><input value=cars></input></dd><br><br>
+                    <dd><a title="Plavi oglasnik" href="https://www.oglasnik.hr/"> Plavi Oglasnik </a></dd>
+                    <br />
+                    <br />
+                <dt> Selected Car</dt>
+                    <br>
+                    <dd><input value=cars></input></dd>
+                    <br />
+                    <br />
             </dl>
         </nav>
         
         <article>
-            <h2>About</h2>
-            <p>This page is developed with one goal and that is to learn <b>HTML & CSS</b> (in VS Code) with introduction to <b>Bootstrap</b> framework</p>
-            <p>Next step would be programming language <b>JavaScript/TypeScript</b> and at the end introduction to framework <b>Angular</b> and/or <b>React</b></p><br>
-            <p>Knowledge until now:</p>
-            <ul>
+            <h2 style="padding-left: 35%;">About</h2>
+            <p style="width: 70%; text-align-last: center; text-indent: 30px;">
+                This page is developed with one goal and that is to learn <b>HTML & CSS</b> (in VS Code) with introduction to <b>Bootstrap</b> framework
+                Next step would be programming language <b>JavaScript/TypeScript</b> and at the end introduction to framework <b>Angular</b> and/or <b>React</b>
+            </p>
+            <br />
+
+            <p style="padding-left: 30%;">Knowledge until now:</p>
+            
+            <ul style="padding-left: 30%;">
                 <li><b>Python (InleliJ)</b>: <u>detail course completed</u></li>
                 <li><i><b>SQLite, GitHub</b>: short introduction</i></li>
                 <li><i><b>Flask and Django</b>: short introduction</i></li>
@@ -115,27 +114,29 @@
                 <li><b>HTML (VS Code)</b>: <u>detail course completed</u></li>
                 <li><b>CSS</b>: <u>detail course in progress...</u></li>
             </ul>
-
         </article>
 
-        <article style="font-size: 0.9vw; height: 210px;">
+        <article style="font-size: 0.9vw; height: 160px;">
             <hr>
+
             <h2>P.S.</h2>
-            <p>On upper bar you can find web page <b>CROglasi</b> where testing is done while learning HTML/CSS</p>
-            <p>You can also call the page by clicking "CROglasi" on the left side of the page.</p>
+            
+            <p>
+                On upper bar you can find web page <b>CROglasi</b> where testing is done while learning HTML/CSS. You can also call the page by clicking "CROglasi" on the left side of the page.
+            </p>
         </article>
     </section>
       
     <footer>
         <address>
-            Kristijan Mihovic<br>
-            51 000 RIJEKA, CROATIA<br>
-            Mob: 091/123 4567<br>
-            <a href="mailto: kmihovic.ri@gmail.com">
-                Support: Click here to send mail to administrator
-            </a>
+            Kristijan Mihovic
+            <br />
+            51 000 RIJEKA, CROATIA
+            <br />
+            Mob: 091/123 4567
+            <br />
+            <a href="mailto: kmihovic.ri@gmail.com">Support: Click here to send mail to administrator</a>
         </address>
     </footer>
-
 </body>
 </html>

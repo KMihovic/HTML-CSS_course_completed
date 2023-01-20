@@ -8,14 +8,24 @@
 	<style>
         body {
             background: url(../images/3.jpg);
+            background-size: cover;
             background-attachment: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 98%; 
+            box-sizing: border-box;
+            padding-left: 10px;
         }
 
-		h1 {color:red; border:4px solid blue; background-color:lightblue;}
-		h2 {font-size:120%; border:4px dashed blue; background-color:lightblue;}
-        body {
-            background-size: cover;
-            font-family: Arial, Helvetica, sans-serif;
+		h1 {
+            color:red; 
+            border:4px solid blue; 
+            background-color:lightblue;
+        }
+
+		h2 {
+            font-size:120%; 
+            border:4px dashed blue; 
+            background-color:lightblue;
         }
 
         table, th, td {
@@ -23,57 +33,48 @@
             border-radius: 5px;
             border-spacing: 5px;
         }
+
         tr:hover {
             background-color: skyblue;
         } 
 
-        ul {
-            list-style-type: none;
-            padding: 15px;
-            overflow: hidden;
-            background-color: #333333;
-        }
-        li {
-            float: left;
-        }
-        li a {
+        nav a {
             color: white;
-            text-align: center;
-            padding: 15px;
             text-decoration: none;
         }
-        li a:hover {
-            background-color: #111111;
+
+        fieldset {
+            margin: 10px;
+        }
+
+        .border {
+            border: 4px solid lightblue;
         }
 	</style>
 </head>
 
 <body>
-    <ul>
-        <li><a href="../home_Page.html">HOME</a></li>       
-        <li><a href="https://www.njuskalo.hr/" target="_blank">Njuskalo</a></li>
-        <li><a href="https://www.index.hr/oglasi" target="_blank">Index</a></li>
-        <li><a href="https://www.oglasnik.hr" target="_blank">Plavi Oglasnik</a></li>
-    </ul>
-    <br>
-    <nav> Stranice oglasa:
-        <a title="Njuskalo" href="https://www.njuskalo.hr/" target="_blank"> NJUSKALO </a> |
-        <a title="Index" href="https://www.index.hr/oglasi/" target="_blank"> INDEX </a> |
-        <a title="Plavi oglasnik" href="https://www.oglasnik.hr/" target="_blank"> PLAVI OGLASNIK </a>
+    <nav style="background-color: #333333; padding: 15px;">
+        <a title="Home" href="../Home_Page.html">HOME |</a>
+        <a title="Njuskalo" href="https://www.njuskalo.hr/" target="_blank">Njuskalo |</a>
+        <a title="Index" href="https://www.index.hr/oglasi/" target="_blank">Index |</a>
+        <a title="Plavi oglasnik" href="https://www.oglasnik.hr/" target="_blank">Plavi Oglasnik</a>
     </nav>
+    <br />
 
-    <!--<iframe src="https://www.njuskalo.hr/" style="height:300px;width:500px;" title="Njuskalo"></iframe>
-    <iframe src="https://www.index.hr/oglasi/" style="height:300px;width:500px;" title="index"></iframe>
-    <iframe src="https://www.oglasnik.hr/" name="iframe_a" style="height:300px;width:500px;border:4px solid red;" title="plavi"></iframe>
-    <p><a style="float:inline-end; border-left:6px solid blue;" href="https://www.auti.hr/" target="iframe_a">Click here for link on PLAVI</a></p>-->
+    <iframe src="https://www.njuskalo.hr/" style="height:300px;width: 30%;" title="Njuskalo"></iframe>
+    <iframe src="https://www.index.hr/oglasi/" style="height:300px;width:30%;" title="index"></iframe>
+    <iframe src="https://www.oglasnik.hr/" name="iframe_a" style="height:300px;width:30%;border:4px solid red;" title="plavi"></iframe>
 
-    <p style="background:yellow; border-left: 6px solid red;">
-        <a href="#5">
-            <b>Jump to section 5: SPECIAL OFFER!!!</b>
-        </a>
+    <p>
+        <a style="float:inline-end; border-left:6px solid blue;" href="https://www.auti.hr/" target="iframe_a">Click here for link on PLAVI</a>
     </p>
 
-    <div>
+    <p style="background:yellow; border-left: 6px solid red;">
+        <a href="#gift"><b>Jump to section 5: SPECIAL OFFER!!!</b></a>
+    </p>
+
+    <div class="border">
         <form action="../home_Page.html">
             <fieldset>
                 <legend>Please enter username and password to go back to Home page</legend>
@@ -81,14 +82,20 @@
                     - We define input field with "id" atribute and than we bind label with "for" atribute.
                     - Input field must have "name" atribute if we want to send value with the "submit" button.
                 -->
-                <label for="username">Username</label><br />
-                <input id="username" name="user" value="Kristijan"><br /><br />
-                <label for="password">Password</label><br />
-                <input type="password" id="password" name="pass" value="123"><br /><br />
-                <input type="submit" value="Go to HOME page" style="border: 6px solid rgb(39, 39, 39);"><br />
+                <label for="username">Username</label>
+                <br />
+                <input id="username" name="user" value="Kristijan">
+                <br />
+                <br />
+                <label for="password">Password</label>
+                <br />
+                <input type="password" id="password" name="pass" value="123">
+                <br />
+                <br />
+                <input type="submit" value="Go to HOME page" style="border: 6px solid rgb(39, 39, 39);">
+                <br />
             </fieldset>
         </form>
-
         <br />
 
         <form action="../home_Page.html">
@@ -104,13 +111,13 @@
                 </select>
 
                 <p>Popup "Hello world"</p>
-                <button type="button" onclick="alert('Hello World!')">Click Me!</button><br />
+                <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+                <br />
                 
                 <label for="favcolor">Select your favorite color:</label>
                 <input type="color" id="favcolor" name="favcolor" value="red">
             </fieldset>
         </form>
-
         <br />
 
         <form id="5" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
@@ -126,21 +133,17 @@
         </form>
     </div>
 
-    <h1 style="width: 800px; box-sizing: border-box;">
-        1: Selling
-    </h1>
-    <hr style="width : 800px; margin-left: 0px;">
+    <h1>Selling</h1>
 
-    <p style="font-family:arial; border: 4px dashed blue; background: lightblue; width: 800px; box-sizing: border-box;">
-        <b> 2: Audi A3 </b>
-        <br>
-        2015y, 120.000km
-    </p>
+    <h2>Audi A3</h2>
 
-    <div style="border: 4px solid lightblue; width: 800px; box-sizing: border-box;">
+    <div class="border">
         <p>
-            Price: 13.500€
+            Price: 13.500€ 
+            <br />
+            2015y, 120.000km
         </p>
+
         <img title="front image" src="../images/1.jpg" width="300" height="200" alt="car image from the front.">
         <img title="side image" src="../images/2.jpg" width="300" height="200" alt="car image from the side." usemap="#tyre">
 
@@ -148,98 +151,87 @@
             <area shape="circle" coords="53,120,25" alt="tyre" title="Fireproofed tyres - I TEST THEM - clikk to see!!" href="../images/6.gif" target="_blank">
             <area shape="circle" coords="235,120,25" alt="tyre" title="Fireproofed tyres - I TEST THEM - clikk to see!!" href="../images/6.gif" target="_blank">
         </map>
-        <br>
-        <br>
+        <br />
+        <br />
         
-        <a href="../pages/car.html" target="_blank">
-            LINK OPENS NEW HTML PAGE IN NEW TAB
-        </a>
-        <br>
-        <br>
-        <a href="https://www.njuskalo.hr/auti/audi-a3-1.6-tdi-oglas-37404666" target="_self" style="font-size:20px;color:blue">
-            LINK OPENS IN THIS TAB
-        </a>
+        <a href="../pages/car.html" target="_blank" style="font-size:20px;color:blue">LINK OPENS NEW HTML PAGE IN NEW TAB</a>
+        <br />
+        <br />
+
+        <a href="https://www.njuskalo.hr/auti/audi-a3-1.6-tdi-oglas-37404666" target="_self" style="font-size:20px;color:blue">LINK OPENS IN THIS TAB</a>
+        <br />
 
         <p style="font-family:arial; font-size:20px; color:blue">
             Click on the picture to open link in the new tab
             <a style="float:inline-end" href="https://www.njuskalo.hr/auti/audi-a3-1.6-tdi-oglas-37404666" target="_blank">
-                <img src="../images/2.jpg" width="75" height="50" alt="link to a car page.">
-            </a>
+                <img src="../images/2.jpg" width="75" height="50" alt="link to a car page."></a>
         </p>
     </div>
-    <hr>
 
-    <h2 id="3" style="margin: 0px;">
-        <b>3: Basic informations</b>
-    </h2>
+    <h2>Basic informations</h2>
 
-    <pre style="font-family:arial; border: 4px solid lightblue;">
-        <table style="width: 20%;" margin>
-                <tr>
-                    <th colspan="2"; style="color: rgb(0, 0, 0); background-color: rgb(0, 183, 255); height: 30px;"> Informations: </th>
-                </tr>
-                <tr>
-                    <td>Location:</td>
-                    <td style="text-align: center;">Rijeka</td>
-                </tr>            
-                <tr>
-                    <td>Car mark:</td>
-                    <td style="text-align: center;">Audi</td>
-                </tr>
-                <tr>
-                    <td>Engine::</td>
-                    <td style="text-align: center;">1,6 <abbr title="Turbocharged Direct Injection">TDI</abbr> </td>
-                </tr>
-                <tr>
-                    <td>Year:</td>
-                    <td style="text-align: center;">2015</td>
-                </tr>
-                <tr>
-                    <td>Milage:</td>
-                    <td style="text-align: center;">118000 km</td>
-                </tr>
-                <tr>
-                    <td>Engine type:</td>
-                    <td style="text-align: center;">Diesel</td>
-                </tr>
-                <tr>
-                    <td>Power:</td>
-                    <td style="text-align: center;">81 kW</td>
-                </tr>
-                <tr>
-                    <td>Engine size:</td>
-                    <td style="text-align: center;">1.598 cm<sup>3</sup></td>
-                </tr>
-                <tr>
-                    <td>Gearbox:</td>
-                    <td style="text-align: center;">manual</td>
-                </tr>
-                <tr>
-                    <td>No.of owners:</td>
-                    <td style="text-align: center;">2</td>
-                </tr>
-                <tr>
-                    <td>Demage:</td>
-                    <td style="text-align: center;"><del>hail damage</del> / painted</td>
-                </tr>
+    <pre style="font-family:arial;" class="border">
+        <table style="width: 20%; margin-left: 30px;">
+            <tr>
+                <th colspan="2"; style="color: rgb(0, 0, 0); background-color: rgb(0, 183, 255); height: 30px;"> Informations: </th>
+            </tr>
+            <tr>
+                <td>Location:</td>
+                <td style="text-align: center;">Rijeka</td>
+            </tr>            
+            <tr>
+                <td>Car mark:</td>
+                <td style="text-align: center;">Audi</td>
+            </tr>
+            <tr>
+                <td>Engine::</td>
+                <td style="text-align: center;">1,6 <abbr title="Turbocharged Direct Injection">TDI</abbr> </td>
+            </tr>
+            <tr>
+                <td>Year:</td>
+                <td style="text-align: center;">2015</td>
+            </tr>
+            <tr>
+                <td>Milage:</td>
+                <td style="text-align: center;">118000 km</td>
+            </tr>
+            <tr>
+                <td>Engine type:</td>
+                <td style="text-align: center;">Diesel</td>
+            </tr>
+            <tr>
+                <td>Power:</td>
+                <td style="text-align: center;">81 kW</td>
+            </tr>
+            <tr>
+                <td>Engine size:</td>
+                <td style="text-align: center;">1.598 cm<sup>3</sup></td>
+            </tr>
+            <tr>
+                <td>Gearbox:</td>
+                <td style="text-align: center;">manual</td>
+            </tr>
+            <tr>
+                <td>No.of owners:</td>
+                <td style="text-align: center;">2</td>
+            </tr>
+            <tr>
+                <td>Demage:</td>
+                <td style="text-align: center;"><del>hail damage</del> / painted</td>
+            </tr>
         </table>
     </pre>
-    <hr>
 
-    <h2>
-        <b>4: Description</b>
-    </h2>
+    <h2>Description</h2>
     
-    <pre style="font-family: arial; border: 4px solid lightblue; padding-top: 20px;">
-        - Without investment.
-        - 2 sets of tyre goes with the car winter/summer.
-        - Full of equipment - parking sensors front back, hill holder, 
-          MMI navigation, start stop, autopilot etc,..
-        - Fixed price.
-    </pre>
-    <hr>
+    <ul style="padding: 30px; padding-left: 50px;" class="border">
+        <li>Without investment.</li>
+        <li>2 sets of tyre goes with the car winter/summer.</li>
+        <li>Full of equipment - parking sensors front back, hill holder, MMI navigation, start stop, autopilot etc,..</li>
+        <li>Fixed price.</li>
+    </ul>
 
-    <dl>
+    <dl style="padding: 30px;" class="border">
         <dt> Main things</dt>
             <dd>- Without investment.</dd>
             <dd>- 2 sets of tyre goes with the car winter/summer.</dd>
@@ -247,31 +239,25 @@
             <dd>- Full of equipment - parking sensors front back, hill holder, MMI navigation, start stop, autopilot etc,..</dd>
             <dd>- Fixed price.</dd>
     </dl>
-    <hr>
 
-    <h2 id="5" style="background-color:yellow; color:red;">
-        <b>5: GIFT FOR 1st BUYER!!!</b>
-    </h2>
+    <h2 id="gift">Gift for 1st Buyer</h2>
 
-    <pre style="background-color: yellow; font-family: arial; border: 4px solid lightblue; padding-top: 20px;">
+    <pre style="background-color: yellow; font-family: arial; padding-top: 20px;" class="border">
         <b style="color: red;">SHORT OFFER!!!</b>
         - For the first buyer we will give second car absoultely FREE!!!
         - He is good, just have one small scratch. If you want to see, click <a href="../images/5.gif" target="_blank;">HERE!</a>
     </pre>
-    <hr>
 
-    <h2>
-        <b> 6: Contact: </b>
-    </h2>
+    <h2>Contact</h2>
     
-    <address style="border: 4px solid lightblue; text-align: center;">
-                Kristijan Mihovic<br>
-                51 000 RIJEKA, CROATIA<br>
-                Mob: 091/123 4567<br>
-                <a href="mailto: kmihovic.ri@gmail.com">
-                    Support: Click here to send mail to administrator
-                </a>
+    <address style="text-align: center;" class="border">
+        Kristijan Mihovic
+        <br />
+        51 000 RIJEKA, CROATIA
+        <br />
+        Mob: 091/123 4567
+        <br />
+        <a href="mailto: kmihovic.ri@gmail.com">Support: Click here to send mail to administrator</a>
     </address>
-
 </body>
 </html>

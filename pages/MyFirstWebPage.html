@@ -34,6 +34,10 @@
             border-spacing: 5px;
         }
 
+        tr:nth-child(even){
+            background-color: lightgray;
+        }
+
         tr:hover {
             background-color: skyblue;
         } 
@@ -50,6 +54,17 @@
         .border {
             border: 4px solid lightblue;
         }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .img-container {
+            float: left;
+            width: 33.33%;
+            height: 300px;
+            }
+
 	</style>
 </head>
 
@@ -62,9 +77,9 @@
     </nav>
     <br />
 
-    <iframe src="https://www.njuskalo.hr/" style="height:300px;width: 30%;" title="Njuskalo"></iframe>
-    <iframe src="https://www.index.hr/oglasi/" style="height:300px;width:30%;" title="index"></iframe>
-    <iframe src="https://www.oglasnik.hr/" name="iframe_a" style="height:300px;width:30%;border:4px solid red;" title="plavi"></iframe>
+    <iframe class="img-container" src="https://www.njuskalo.hr/" title="Njuskalo"></iframe>
+    <iframe class="img-container" src="https://www.index.hr/oglasi/" title="index"></iframe>
+    <iframe class="img-container" src="https://www.oglasnik.hr/" name="iframe_a" style="border:4px solid red;" title="plavi"></iframe>
 
     <p>
         <a style="float:inline-end; border-left:6px solid blue;" href="https://www.auti.hr/" target="iframe_a">Click here for link on PLAVI</a>

@@ -63,6 +63,18 @@
             margin-bottom: 5px; /* or you can use "line-height: 30px;"*/
         }
 
+        .test{
+            animation-name: example;
+            animation-duration: 8s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes example {
+            0%   {left:0%;}
+            33%  {left:45%; color: aqua;}
+            66%  {left:-45%;color: red;}
+            100% {left:0%;}
+        }
 	</style>
 </head>
 
@@ -78,7 +90,7 @@
     <header>
         <h1 style="text-shadow: 2px 2px 4px #000000;">HOME</h1>
         <!-- to use bootstrap icon,..-->
-        <i class="glyphicon glyphicon-cloud"></i>
+        <i class="glyphicon glyphicon-cloud test"></i>
     </header>
 
     <section>
